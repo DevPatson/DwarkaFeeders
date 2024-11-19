@@ -279,6 +279,39 @@ footer h2 {
   .showMenu {
     transform: translateY(0);
   }
+  .mainSwipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px;
+  }
+  .swipeContainer{
+    background-color: #404040;
+    text-align: center;
+  }
+  .swipeContainer {
+    color: #b3b3b3;
+    
+  }
+  #swipeHead {
+    padding: 15px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 5vw;
+  }
+  .swiperImage{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .swipeHeadContainer{
+    text-align: center;
+    width: 70%;
+    margin: 0px auto;
+  }
 @media only screen and (max-width: 700px) {
     body{
         width: 100%;
@@ -317,6 +350,12 @@ footer h2 {
     }
     .menu{
         visibility: visible;
+    }
+    .textSec{
+        width: 70%;
+    }
+    #swipeHead {
+        font-size: 9vw;
     }
 }
 @media only screen and (max-height: 700px) {
