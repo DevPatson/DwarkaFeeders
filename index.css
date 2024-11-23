@@ -61,8 +61,18 @@ li{
 }
 .logo {
     margin-left: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.logo h4{
+    margin-left: 8px;
+    color: rgb(194, 191, 191);
+}
+#logoImg{
+    height: 40px;
+    width: 40px;
+}
 /* welcome */
 .welcome {
     display: flex;
@@ -98,7 +108,7 @@ li{
     justify-content: center;
     align-items: center;
     color: rgb(85, 83, 83);
-    height: 70vh;
+    height: 90vh;
     box-shadow: 0 60px 80px rgba(0, 0, 0, 0.60), 0 45px 26px rgba(0, 0, 0, 0.14);
     width: 60%;
 }
@@ -117,7 +127,7 @@ li{
 
 .abtText {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
     width: 80%;
 }
 
@@ -126,7 +136,7 @@ li{
 }
 
 .abtContainer {
-    height: 100vh;
+    height: 107vh;
     display: flex;
     justify-content: center;
 
@@ -140,7 +150,7 @@ li{
     background-image: url('./public/donation.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 95vh;
     width: 100%;
 
     color: rgb(179, 179, 179);
@@ -228,6 +238,7 @@ footer h2 {
     font-size: 4vw;
     color: #313030;
 }
+
 .hamburger {
     position: absolute;
     z-index: 100;
@@ -312,19 +323,25 @@ footer h2 {
     width: 70%;
     margin: 0px auto;
   }
+  .abtText p{
+    margin-top: 8px;
+  }
 @media only screen and (max-width: 700px) {
     body{
         width: 100%;
     }
     .navbar{
         width: 100vw;
-        padding-block: 35px;
+        padding-block: 9px;
     }
     .logo {
-        margin-left: 10px;
+        margin-left: 5px;
+    }
+    .abtContainer{
+        height: 140vh;
     }
     .navul{
-        visibility: hidden;
+        display: none;
         margin-right: 0px;
     }
     .navList{
@@ -337,13 +354,15 @@ footer h2 {
         flex-direction: column;
     }
     .donation{
-        height:105vh;
+        height:63rem;
     }
     .card{
         margin-top: 15px;
     }
     .about{
-        width:93%
+        width:93%;
+        height: 120vh;
+        
     }
     .hamburger{
         visibility: visible;
@@ -357,22 +376,26 @@ footer h2 {
     #swipeHead {
         font-size: 9vw;
     }
+    form {
+        padding: 37.5px;
+        margin: 50px 0;
+      }
 }
 @media only screen and (max-height: 700px) {
 
-    .donation {
+    /* .donation {
         height: 132vh;
-    }
-    .about{
-        height: 84vh;
-    }
+    } */
+    /* .about{
+        height: 90vh;
+    } */
     .hamburger img{
         height: 20px;
         width: 20px;
     }
-    .navbar{
+    /* .navbar{
         padding-block:20px ;
-    }
+    } */
     .heading h2{
         font-size: 24px;
     }
